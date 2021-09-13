@@ -1,13 +1,41 @@
 body{
     text-align: center;
+    font-size: 1.5rem;
+    color:green;
 }
 
 label{
     display: block;
     padding: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 input{
-    width: 15vw;
+    display: block;
+    margin-left: 40rem;
+    width: 20rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size:large;
+    margin-top: 7px;
+    border-radius: 14px;
+}
+
+button{
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px;
+    margin-left: 2rem;
+}
+
+div{
+    font-size: larger;
+    padding: 2rem;
+    
+}
+
+footer{
+    font-size: 25px;
+    font-weight: 400;
 }
