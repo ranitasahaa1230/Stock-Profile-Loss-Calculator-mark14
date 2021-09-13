@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding: auto;
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 15vw;
+}
