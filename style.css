@@ -1,24 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     text-align: center;
     font-size: 1.5rem;
-    color:green;
 }
 
+h1{
+    padding-top: 2rem;
+    color:brown;
+}
+
+div{
+    background-color:#93C5FD;
+}
 label{
     display: block;
-    padding: auto;
-    align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 650;
+    text-align: center;
+    color:green;
+    padding-top: 1rem;
+    font-size: 2rem;
 }
 
 input{
     display: block;
-    margin-left: 38rem;
-    width: 20rem;
+    margin:auto;
+    width: 20.3rem;
+    margin-top: 0.2rem;
     padding: 1rem;
-    font-weight: 700;
     font-size:large;
-    margin-top: 7px;
     border-radius: 14px;
 }
 
@@ -26,17 +43,42 @@ button{
     font-size: 1.5rem;
     background-color: blueviolet;
     color: aliceblue;
-    padding: 5px;
-    margin-left: 2rem;
+    margin:auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+
 }
 
-div{
-    font-size: 2.5rem;
-    padding: 2rem;
+#output-box{
+    font-size: 2rem;
+    padding: 1.2rem;
     
 }
 
 footer{
-    font-size: 20px;
-    font-weight: 500;
+    background-color:#1F2937;  
 }
+
+p{
+    font-size: 2rem;
+    color:white;
+    font-family: 'Merienda', cursive;
+    padding: 0.8rem;
+}
+
+img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.2rem;
+    box-shadow:0px 0px 10px 0px black;
+}
+
+img:hover{
+    background-color: blue;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    body {
+      background-color: lightpink;
+    }
+  }
