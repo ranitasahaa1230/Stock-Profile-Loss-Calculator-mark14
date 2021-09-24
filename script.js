@@ -17,8 +17,8 @@ function submitHandler(){
 
 function calculateLossAndProfit(initial,quantity,current){
     if(initial>current){
-        const loss= (initial - current) * quantity;
-        const lossPercentage = (loss / initial) * 100;
+        const loss= ((initial - current) * quantity).toFixed(2);;
+        const lossPercentage = (((initial - current)* 100)/initial).toFixed(2);
         showOutput(`Hey, the loss is ${loss} and the percent is ${lossPercentage}%😞`);
 
         if(lossPercentage < 50){
@@ -26,8 +26,8 @@ function calculateLossAndProfit(initial,quantity,current){
         }
 
     }else if(current>initial){
-        const profit=(current-initial)*quantity;
-        const profitPercentage=(profit/initial)*100;
+        const profit=((current-initial)*quantity).toFixed(2);
+        const profitPercentage=(((current-initial)*100)/initial).toFixed(2);
         showOutput(`Hey, the profit is ${profit} and the percent is ${profitPercentage}%🎉`);
 
         if(profitPercentage > 50){
