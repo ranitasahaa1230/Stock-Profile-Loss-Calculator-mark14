@@ -1,8 +1,9 @@
 # Stock-Profile-Loss-Calculator-mark14
 neog mark14
 
-About App
-This app is created using vanilla js which shows how much profit or loss we are having on our stocks
-
-How this works?
-User need to enter stock purchase price per unit, stock current price and stock units/quantity. App will show loss/profit in % and absolute amount.
+## Features
+  
+- Enter the initial price of the stock, numbers of stocks purchased, and the current price of stock
+- The app will tell you the percentage and the absolute value of the your profit/loss
+- Notice the app theme change when the profit/loss is more than 50%
+- Made using React.js
