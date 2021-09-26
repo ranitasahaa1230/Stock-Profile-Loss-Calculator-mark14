@@ -1,12 +1,16 @@
+const form = document.forms[0];
 const initialPrice=document.querySelector('#initial-price');
 const quantityStocks=document.querySelector('#quantity-stocks');
 const currentPrice=document.querySelector('#current-price');
-const submitBtn=document.querySelector('#submit-btn');
+// const submitBtn=document.querySelector('#submit');
 const outputEl=document.querySelector('#output-box');
 
-submitBtn.addEventListener('click', submitHandler);
+form.addEventListener("submit", submitHandler);
 
-function submitHandler(){
+function submitHandler(event){
+    event.preventDefault();
+    console.log(event.preventDefault());
+
     const ip=Number(initialPrice.value);
     const qty=Number(quantityStocks.value);
     const curr=Number(currentPrice.value);

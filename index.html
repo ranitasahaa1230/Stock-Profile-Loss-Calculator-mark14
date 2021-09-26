@@ -10,23 +10,23 @@
 <body>
     <div>
         <h1>Stock Profile & Loss Calculator</h1>
-    <main>
+    <form name="check-form" class="form">
         <label for="initial-price">Initial Price
-            <input type="number" id="initial-price" placeholder="Enter Initial Price here">
+            <input type="number" id="initial-price" placeholder="Enter Initial Price here" required autofocus min="1">
         </label>
 
         <label for="quantity-stocks" >Quantity of Stocks
-            <input type="number" id="quantity-stocks" placeholder="Enter the Number of Stocks bought" >
+            <input type="number" id="quantity-stocks" placeholder="Enter the Number of Stocks bought" required autofocus min="1">
         </label>
 
         <label for="current-price">Current Price
-            <input type="number" id="current-price" placeholder="Enter the Current Price of the stocks">
+            <input type="number" id="current-price" placeholder="Enter the Current Price of the stocks" required autofocus min="1">
         </label>
 
-        <button id="submit-btn">Tell Me!!</button>
+        <button id="submit">Tell Me!!</button>
 
         <div id="output-box"></div>
-    </main>
+    </form>
 
     </div>
     
