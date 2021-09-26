@@ -19,7 +19,7 @@ function calculateLossAndProfit(initial,quantity,current){
     if(initial>current){
         const loss= ((initial - current) * quantity).toFixed(2);;
         const lossPercentage = (((initial - current)* 100)/initial).toFixed(2);
-        showOutput(`Hey, the loss is ${loss} and the percent is ${lossPercentage}%😞`);
+        showOutput(`You have incurred ${lossPercentage}% loss worth Rs ${loss} 😞`);
 
         if(lossPercentage < 50){
             document.body.style.backgroundColor ="aqua";
@@ -28,7 +28,7 @@ function calculateLossAndProfit(initial,quantity,current){
     }else if(current>initial){
         const profit=((current-initial)*quantity).toFixed(2);
         const profitPercentage=(((current-initial)*100)/initial).toFixed(2);
-        showOutput(`Hey, the profit is ${profit} and the percent is ${profitPercentage}%🎉`);
+        showOutput(`You have gained ${profitPercentage}% profit worth Rs ${profit} 🎉`);
 
         if(profitPercentage > 50){
             document.body.style.backgroundColor ="yellow";
