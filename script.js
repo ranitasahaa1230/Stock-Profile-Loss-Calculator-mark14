@@ -23,6 +23,9 @@ function calculateLossAndProfit(initial,quantity,current){
 
         if(lossPercentage < 50){
             document.body.style.backgroundColor ="aqua";
+        }else{
+            document.body.style.backgroundColor ="lightgreen";
+
         }
 
     }else if(current>initial){
@@ -32,6 +35,9 @@ function calculateLossAndProfit(initial,quantity,current){
 
         if(profitPercentage > 50){
             document.body.style.backgroundColor ="yellow";
+        }else{
+            document.body.style.backgroundColor ="pink";
+
         }
 
     }else{
